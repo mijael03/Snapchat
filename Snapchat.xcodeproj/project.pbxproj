@@ -14,6 +14,7 @@
 		F33B2C8128418F9500D499C0 /* Snapchat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F33B2C7F28418F9500D499C0 /* Snapchat.xcdatamodeld */; };
 		F33B2C8328418F9700D499C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33B2C8228418F9700D499C0 /* Assets.xcassets */; };
 		F33B2C8628418F9700D499C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F33B2C8428418F9700D499C0 /* LaunchScreen.storyboard */; };
+		F33B2C8E28419D8300D499C0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F33B2C8D28419D8300D499C0 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F33B2C8228418F9700D499C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33B2C8528418F9700D499C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F33B2C8728418F9700D499C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33B2C8D28419D8300D499C0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				F33B2C8428418F9700D499C0 /* LaunchScreen.storyboard */,
 				F33B2C8728418F9700D499C0 /* Info.plist */,
 				F33B2C7F28418F9500D499C0 /* Snapchat.xcdatamodeld */,
+				F33B2C8D28419D8300D499C0 /* GoogleService-Info.plist */,
 			);
 			path = Snapchat;
 			sourceTree = "<group>";
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F33B2C8628418F9700D499C0 /* LaunchScreen.storyboard in Resources */,
+				F33B2C8E28419D8300D499C0 /* GoogleService-Info.plist in Resources */,
 				F33B2C8328418F9700D499C0 /* Assets.xcassets in Resources */,
 				F33B2C7E28418F9500D499C0 /* Main.storyboard in Resources */,
 			);
