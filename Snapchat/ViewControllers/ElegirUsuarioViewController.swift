@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseDatabase
+import FirebaseAuth
 
 class ElegirUsuarioViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -19,10 +20,21 @@ class ElegirUsuarioViewController: UIViewController,UITableViewDataSource,UITabl
         cell.textLabel?.text = usuario.email
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let usuario = usuarios[indexPath.row]
+        let currentuser = Auth.auth().currentUser?.email
+        let snap = ["from" : currentuser , "descripcion" : descrip, "imagenURL" : imagenURL,"imagenID" : imagenID,"audioURL":audioURL,"audioID": audioID]
+        Database.database().reference().child("usuarios").child(usuario.uid).child("snaps").childByAutoId().setValue(snap)
+        navigationController?.popViewController(animated: true)
+    }
 
     @IBOutlet weak var listaUsuarios: UITableView!
     var usuarios:[Usuario] = []
+    var imagenURL = ""
+    var descrip = ""
+    var imagenID = ""
+    var audioID = ""
+    var audioURL = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         listaUsuarios.delegate = self

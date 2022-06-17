@@ -9,4 +9,5 @@ target 'Snapchat' do
   pod 'FirebaseAuth'
   pod 'FirebaseStorage'
   pod 'FirebaseDatabase'
+  pod 'SDWebImage'
 end
